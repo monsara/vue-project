@@ -1,5 +1,9 @@
-<templat>
-</templat>
+<template>
+  <div data-page="About">
+    <h1>About</h1>
+  </div>
+</template>
 
-<spript>
-</spript>
+<script>
+export default {};
+</script>

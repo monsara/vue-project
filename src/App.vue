@@ -1,29 +1,22 @@
 <template>
   <div id="app">
-      <Navbar />
-    <div class="container">
-      <div class="row">
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-      </div>
-    </div>
+    <Header />
 
-    <!-- Content here -->
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <main class="main-content">
+      <b-container>
+        <router-view />
+      </b-container>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import Navbar from "./components/Navbar.vue";
+import Header from "./components/Header.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
-    Navbar,
+    Header,
   },
 };
 </script>
@@ -35,5 +28,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.main-content {
+  margin-top: 50px;
 }
 </style>
